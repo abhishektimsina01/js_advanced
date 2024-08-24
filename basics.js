@@ -10,14 +10,15 @@ function fun1(){
 
 //async
 function call(){
-    setInterval(()=>{
+    setTimeout(()=>{
         console.log("Hello! Ninja");
-    },100)
+    },1000)
 };
 
-//syn
+//synchronous code
 
-//the asynchronous code doesnt blocks the flow of the code
+//the asynchronous code doesnt blocks the flow of the code.
+
 // it runs/executes if and only if main stack is completed from execution of the function 
 //when the sync function/code completed then only the other code runs(asynchronous code).
 console.log("Hello");
