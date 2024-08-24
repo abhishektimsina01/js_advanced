@@ -13,6 +13,7 @@
 //resolve and
 //reject
 
+//this function promises to return a value either success or failure
 function walkDog(){
     return new Promise((res,rej)=>{
         setTimeout(()=>{
@@ -26,6 +27,7 @@ function walkDog(){
     })
 }
 
+//this function promises to return a value either success or failure
 function washdishes(){
         return new Promise((res,rej)=>{
             setTimeout(()=>{
@@ -35,11 +37,13 @@ function washdishes(){
                 else{
                     rej("you didnt wash the dishes");
                 }
-            },2500);
+            },100);
         })
     }
 
 //then chain
+//when the promise of the waldog() function completes then only the other function is called this is how asynchronous code are handled.
+// walkDog() then washdishes()
 walkDog().then(value =>{console.log(value);return washdishes();})
                             .then(value => {console.log(value);})
                             .catch(value=>{console.log(value);})
