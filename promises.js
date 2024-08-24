@@ -44,6 +44,8 @@ function washdishes(){
 //then chain
 //when the promise of the waldog() function completes then only the other function is called this is how asynchronous code are handled.
 // walkDog() then washdishes()
-walkDog().then(value =>{console.log(value);return washdishes();})
-                            .then(value => {console.log(value);})
-                            .catch(value=>{console.log(value);})
+
+//but it also creates a chain like the callback but little bit easier but its hard to read too.
+walkDog().then(value =>{console.log(value);return washdishes();})//if resolve the promise(promise is fulfilled)
+         .then(value => {console.log(value);})//same as the above defination 
+         .catch(value=>{console.log(value);}) //if error (rej) in any one of them
