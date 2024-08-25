@@ -31,7 +31,7 @@ function walkDog(){
 function washdishes(){
         return new Promise((res,rej)=>{
             setTimeout(()=>{
-                if(true){
+                if(false){
                     res("you washed the dishes");
                 }
                 else{
@@ -40,7 +40,7 @@ function washdishes(){
             },100);
         })
     }
-
+    
 //then chain
 //when the promise of the waldog() function completes then only the other function is called this is how asynchronous code are handled.
 // walkDog() then washdishes()
