@@ -50,7 +50,7 @@ function washdishes(callback){
 
 //we generally make the asynch function so that we can stop the execution of the code in sife thst function with the help of the await keyword. 
 async function bade(){
-    //check for the return of the promise for the resokve
+    //check for the return of the promise for the resolve
     //runs this program if the asynchronous code returns a success(resolve)
     try{
         //first the try block
