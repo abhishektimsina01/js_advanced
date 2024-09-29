@@ -72,4 +72,5 @@ async function bade(){
     }
 }
 //when we call the functin we mentined as async it starts to execute the funcion
-bade();
+bade().then((data)=>{console.log(data)})
+    .catch((data)=>{console.error(data)});
