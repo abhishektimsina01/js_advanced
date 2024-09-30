@@ -27,6 +27,7 @@ function walkDog(){
     })
 }
 
+
 //this function promises to return a value either success or failure
 function washdishes(){
         return new Promise((res,rej)=>{
